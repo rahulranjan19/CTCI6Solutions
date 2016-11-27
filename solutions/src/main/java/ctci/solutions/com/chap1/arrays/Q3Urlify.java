@@ -8,18 +8,21 @@ public class Q3Urlify {
 		System.out.println(" With correct string: " + Q3Urlify.changeToURL(url));
 	}
 
-	private static String changeToURL(String url) {
+	private static boolean changeToURL(String url) {
 
 		StringBuilder sbuilder = new StringBuilder();
 
+		int countSpace = 0;
+
 		for (char temp : url.trim().toCharArray()) {
 			if (temp == ' ') {
+				countSpace++;
 				sbuilder.append("%20");
 			} else {
 				sbuilder.append(temp);
 			}
 		}
 
-		return sbuilder.toString();
+		return sbuilder.toString().length() == url.trim().length() + (countSpace * 2);
 	}
 }

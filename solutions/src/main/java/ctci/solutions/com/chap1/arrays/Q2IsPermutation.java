@@ -38,13 +38,15 @@ public class Q2IsPermutation {
 		char[] charArr = new char[256];
 
 		for (char temp : str1.toCharArray()) {
-			charArr[temp] = 1;
+			charArr[temp]++;
 		}
 
 		for (char temp : str2.toCharArray()) {
-			if (charArr[temp] != 1) {
+			if (charArr[temp] == 0) {
 				isPermutation = false;
 				break;
+			} else {
+				charArr[temp]--;
 			}
 		}
 
