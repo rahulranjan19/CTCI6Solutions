@@ -12,8 +12,8 @@ public class Q1IsUnique {
 		System.out.println("Checking for unique chars in a string.");
 		System.out.println(" With correct string: " + Q1IsUnique.hasUniqueCharDS(correct));
 		System.out.println(" With incorrect string: " + Q1IsUnique.hasUniqueCharDS(wrong));
-		System.out.println(" With correct string: " + Q1IsUnique.hasUniqueChar("correct"));
-		System.out.println(" With incorrect string: " + Q1IsUnique.hasUniqueChar("wrong"));
+		System.out.println(" With correct string: " + Q1IsUnique.hasUniqueChar(correct));
+		System.out.println(" With incorrect string: " + Q1IsUnique.hasUniqueChar(wrong));
 	}
 
 	private static boolean hasUniqueCharDS(String string) {
