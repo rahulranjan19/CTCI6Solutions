@@ -19,7 +19,7 @@ public class Q5IsOneAway {
 		int distance = 1;
 		boolean isOnwAway = true;
 
-		if (Math.abs(str1.length() - str2.length()) > 1) {
+		if (Math.abs(str1.length() - str2.length()) > distance) {
 			return false;
 		}
 
