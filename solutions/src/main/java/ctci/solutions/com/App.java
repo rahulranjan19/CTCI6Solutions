@@ -7,7 +7,7 @@ import ctci.solutions.com.chap1.arrays.Q4PermutationP;
 import ctci.solutions.com.chap1.arrays.Q5IsOneAway;
 
 /**
- * Hello world!
+ * Main file to execute solutions
  *
  */
 public class App {
